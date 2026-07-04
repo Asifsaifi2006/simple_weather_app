@@ -49,7 +49,7 @@ cd WeatherApp
 3. If your project uses a weather API, add your API key in `script.js`.
 
 ```javascript
-const apiKey = "YOUR_API_KEY";
+const apiKey = "bd772f646a9c66553e4b57058617f1a2";
 ```
 
 4. Open `index.html` in your browser.

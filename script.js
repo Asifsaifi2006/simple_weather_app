@@ -6,7 +6,7 @@ p.style.color = 'red';
 document.querySelector('.city').innerText = 'Delhi';
 document.querySelector('.temp').innerText = '34°C';
 document.querySelector('.humidity .text').innerText = '46%';
-document.querySelector('.weatherImg').src = "/WeatherApp/images/clouds.png";
+document.querySelector('.weatherImg').src = "/images/clouds.png";
 document.querySelector('.wind .text').innerText = '1.38 km/h';
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q='
@@ -23,17 +23,17 @@ async function getWeather(city) {
         document.querySelector('.temp').innerText =  Math.floor(data.main.temp - 273.15)+"°C"
         
         if(data.weather[0].main == 'Clouds'){
-            document.querySelector('.weatherImg').src = "/WeatherApp/images/clouds.png" 
+            document.querySelector('.weatherImg').src = "/images/clouds.png" 
         }else if(data.weather[0].main == 'Clear'){
-            document.querySelector('.weatherImg').src = "/WeatherApp/images/clear.png"
+            document.querySelector('.weatherImg').src = "/images/clear.png"
         }else if(data.weather[0].main == 'Drizzle'){
-            document.querySelector('.weatherImg').src = "/WeatherApp/images/drizzle.png"
+            document.querySelector('.weatherImg').src = "/images/drizzle.png"
         }else if(data.weather[0].main == 'Rain'){
-            document.querySelector('.weatherImg').src = "/WeatherApp/images/rain.png"
+            document.querySelector('.weatherImg').src = "/images/rain.png"
         }else if(data.weather[0].main == 'Mist'){
-            document.querySelector('.weatherImg').src = "/WeatherApp/images/mist.png"
+            document.querySelector('.weatherImg').src = "/images/mist.png"
         }else if(data.weather[0].main == 'Snow'){
-            document.querySelector('.weatherImg').src = "/WeatherApp/images/snow.png"
+            document.querySelector('.weatherImg').src = "/images/snow.png"
         }
 
         console.log(data.weather[0].main);

@@ -2,6 +2,8 @@
 
 A simple weather application built using HTML, CSS, and JavaScript. Users can search for any city to view the current weather conditions, including temperature, humidity, and wind speed.
 
+Live Link: https://asifsaifi2006.github.io/simple_weather_app/
+
 ## Features
 
 * Search weather by city name
